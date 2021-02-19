@@ -4,30 +4,30 @@ import pickle
 import mysql.connector
 
 # store the user's data in the database:
-def store_data(form_data_dict, pred_class):
-    list_values_form = list(form_data_dict.values())
-    list_values_form.append(pred_class)
-    tuple_values_form = tuple(list_values_form) # since execute() method takes tuple as arguments
+# def store_data(form_data_dict, pred_class):
+#   list_values_form = list(form_data_dict.values())
+#    list_values_form.append(pred_class)
+#    tuple_values_form = tuple(list_values_form) # since execute() method takes tuple as arguments
 
-    # defining connection parameters / configerations of MariaDB database:
-    db_config = {
-        'host': '127.0.0.1',
-        'user': 'bank_churn_username',
-        'password': 'bank_churn_password',
-        'database': 'bank_churn_db'
-    }
+#     defining connection parameters / configerations of MariaDB database:
+#    db_config = {
+     #   'host': '127.0.0.1',
+      #  'user': 'bank_churn_username',
+       # 'password': 'bank_churn_password',
+        #'database': 'bank_churn_db'
+   # }
 
     # establishing a connection between Python and the database:
-    conn = mysql.connector.connect(**db_config)  # keyword arguments(config of database) given as dictionary
-    cursor = conn.cursor() # used for sending and retrieving the data:
-    _SQL = """ INSERT INTO customers_data 
-                (CreditScore, Gender, Age, Balance, NumOfProducts, IsActiveMember, Country, Exited)
-                VALUES
-                (%s, %s, %s, %s, %s, %s, %s, %s)"""
-    cursor.execute(_SQL, tuple_values_form)
-    conn.commit() # making sure that the data gets stored in the database.
-    cursor.close() # since we have limited resources, so we always close the cursor.
-    conn.close() # henceforth, we close the connection as well.
+    #conn = mysql.connector.connect(**db_config)  # keyword arguments(config of database) given as dictionary
+    #cursor = conn.cursor() # used for sending and retrieving the data:
+    #_SQL = """ INSERT INTO customers_data 
+     #           (CreditScore, Gender, Age, Balance, NumOfProducts, IsActiveMember, Country, Exited)
+      #          VALUES
+       #         (%s, %s, %s, %s, %s, %s, %s, %s)"""
+    #cursor.execute(_SQL, tuple_values_form)
+    #conn.commit() # making sure that the data gets stored in the database.
+    #cursor.close() # since we have limited resources, so we always close the cursor.
+    #conn.close() # henceforth, we close the connection as well.
             
 
 # function to give the predictions:
@@ -119,7 +119,7 @@ def hello():
 def results():
     form_data_dict = request.form # form data as dictionary.
     [prob_0, prob_1, pred_class] = shaping_inputs(form_data_dict) # preprocessing the data.
-    store_data(form_data_dict, pred_class) # sending the data of the form to get stored in the database.
+    # store_data(form_data_dict, pred_class) # sending the data of the form to get stored in the database.
     return render_template('results.html', 
                             prob_0 = str(round(prob_0*100, 3)) + '%',
                             prob_1 = str(round(prob_1*100, 3)) + '%',
