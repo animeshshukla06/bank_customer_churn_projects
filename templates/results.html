@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Results of Predictions..{% endblock %}
+
+{% block body %}
+<!-- Three arguments should be given to the render_template- prob_0, prob_1 and target_class -->
+
+    <div id='result'>
+        <h1>Prediction Results!</h1>
+        <table>
+            <tr>
+                <th>Probability of Continuing the Services</th><td>{{ prob_0 }}</td>
+            </tr>
+
+            <tr>
+                <th>Probability of Leaving the Services</th><td>{{ prob_1 }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id='conclusion'>
+        <p> 
+            Based upon the data entered by the bank manager, it can be observed that the <strong><em> Probability of
+            the user leaving the bank is {{ prob_1 }}</em></strong>. Hence, accoring to the result, 
+            <strong><em>the user will more likely to {{ target_class }} the services of the bank.</em></strong>
+            Now the bank managers can use this information for the better managerial decisions for 
+            different set of customers.
+        </p>
+    </div>
+
+
+{% endblock %}

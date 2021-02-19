@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %} Customer Churning Classification {% endblock %}
+
+{% block body %}
+
+    <div id='header'>
+        <h1>XYZ's Customer Churning Prediction:</h1>
+    </div>
+
+    <div id='main'>
+        <h1>Welcome to Customer Churn Prediction!</h1>
+        <p>Bank Managers or other decision and policy makers of bank 
+            can enter their customer details and predict whether
+            their customer would leave the services provided by the XYZ Bank
+            in future or not. This could help the bank to improve 
+            their customer service and focuss on retaining the customers 
+            which are about to leave the bank.
+        </p>
+        <hr></hr>
+    </div> 
+
+    <div id='data'>
+        <form method="POST" action="/results">
+            <table>
+                    <caption>
+                        <b>Enter the User Datails:</b>
+                    </caption>
+
+                    <tr>
+                        <th>CreditScore</th> <td><input type="number" placeholder="Creditscore of Customer" name="creditscore"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Gender</th> <td><input type="Text" placeholder="Male or Female" name="gender"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Age</th> <td><input type="number" placeholder="Age of Customer" name="age"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Balance</th> <td><input type="number" placeholder="Current Balance of Customer" name="balance"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Number Of Products Used</th> <td><input type="number" placeholder="Number of products or services used (Maximum-> 4)" name="num_of_products"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Active Member?</th> <td> <input type="text" placeholder="Yes or No" name="activemember"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Country</th> <td><input type="text" placeholder="Germany / France / Spain" name="country"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Click Once You're Done!</th><td><input type="Submit" value="Submit" ></td>
+                    </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id='footer'>
+        <p>
+        <b>&copy; 2021, XYZ Bank</b>
+        <br />
+        <b>All trademarks and registered trademarks appearing on
+        this site are the property of their respective owners.</b>
+        </p>
+    </div>
+ 
+{% endblock %}
+

@@ -1,0 +1,85 @@
+body{
+    background-color: #183f4e;
+    font-family: Georgia, “Times New Roman”, Times, serif;
+    font-size: small;
+    margin: 0px;
+}
+
+#header {
+    background-color: #a0bac9;
+    margin: 10px;
+    height: 40px;
+    padding-left: 350px;
+}
+
+#main {
+    background: #a0bac9;
+    font-size: 105%;
+    padding: 15px;
+    margin: 0px 30px 30px 10px;
+}
+#data {
+    background: #183f4e;
+    font-size: 105%;
+    height: 350px;
+    padding-left: 15px;
+    margin: 0px 10px 10px 10px
+}
+ 
+#result{
+    background: #a0bac9;
+    font-size: 160%;
+    height: 200px;
+    padding: 15px;
+    margin-left: 350px;
+    margin: 0px 10px 20px 10px;
+}
+
+#conclusion {
+    background-color: #a0bac9;
+    color: #efe5d0;
+    text-decoration-color: black;
+    text-align: center;
+    padding-top: 20px;
+    margin: 2px;
+    font-size: 150%;   
+}
+
+table {
+    margin-left: 50px;
+    border: thin solid rgb(127, 173, 211);
+    caption-side: top;
+    border-collapse: collapse;
+    padding: 5p 5px 2px; 
+   }
+
+#footer {
+    background-color: #a0bac9;
+    color: #efe5d0;
+    text-decoration-color: black;
+    text-align: center;
+    padding-top: 20px;
+    margin: 2px;
+    font-size: 90%;
+}
+
+
+h1 {
+    font-size: 170%;
+    color: #010708;
+   }
+
+p {
+    color: #010708;
+}
+
+td, th {
+    background-color: #a0bac9;
+    font-size: 102%;
+    color: #010708;
+}
+input {
+    font-size:        125%;
+    width:            30em;
+  }
+  
