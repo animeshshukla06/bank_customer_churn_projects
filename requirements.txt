@@ -7,3 +7,4 @@ Werkzeug
 numpy
 scikit-learn
 pandas
+pickle
