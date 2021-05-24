@@ -1,4 +1,4 @@
-# bank_customer_churn_projects:
+<h3>bank_customer_churn_projects:</h3>
 A Web Application is developed where the customer details will be entered using the bank manager who can classify beforehand whether the customer would leave the services of the bank or not. 
 Templates folder contains the 2 templates which of HTML and styled using CSS which gives the structure of the web page.
 Static folder contains the Cascading Style Sheets with the help of which we style our webpage.
