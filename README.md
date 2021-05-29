@@ -1,10 +1,11 @@
 <h1>Bank Customer Churn Project:</h1>
 The aim of the project is to classify the customers of the bank based upon their personal details like 'Credit Score', 'Bank Balance', etc. as input features. The backend of the webpage involves SQL database and the machine learning model where the data entered for real time prediction will be stored in SQL database and the machine learning model would make predictions based upon the entered data; further the frontend of the webpage is built using HTML and CSS. The web-page could be extensively used by the bank managers to get an idea about those customers who are more likely to leave the services of the bank in future and hence, they could formulate some policies in order to retain those customers. 
 
-# attach the image of web page and the prediction result
+<p>
+<img src='![image](https://user-images.githubusercontent.com/64635584/120081614-291c7100-c0dc-11eb-8328-2ecdb7c6bfe6.png)
+', width='', height=''>
 <img src='', width='', height=''>
-<img src='', width='', height=''>
-
+</p>
 
 
 <h2>Complete Life Cycle of Project:</h2>
@@ -31,12 +32,13 @@ The aim of the project is to classify the customers of the bank based upon their
     <li><strong>Model Evaluation:</strong>
     <ul>
       <li><strong>Precision Recall Tradeoff: </strong>Precision Recall Curve helps us getting the idea of the best precision-recall tradeoff for a particular machine learning model.</li>
-      <li><strong>ROC Curve: </strong> ROC Curve </li>
-      <li><strong>Overfitting of Model: </strong></li>
+      <li><strong>ROC Curve: </strong> ROC Curve is the curve obtained on plotting True Positive rate along y-axis and False Positive Rate along x-axis. It is basically used to compare different classifiers and choose the best out of it. The selection of a classifier is done based upon the Area Under th Curve of ROC.<strong> Generally for a classifier to be perform well, it should as high True Positive Rate as possible and as low False Positive Rate as possible.</strong>. Further, the figure displays Precisio-Recall Curve, ROC Curve and AUC Bar Chart for the above listed Machine Learning Algorithms and it can be observed that XGBoost Classifier has the highest AUC Score but the number of hyperparameters are a lot too more; hence, we go with Support Vector Classifier which has just 1% less AUC Score than XGBoost.</li>
+       <img src='', width='', height=''>
+      <li><strong>Overfitting of Model: </strong> Checking whether the model generalizes for new data on which the  algorithm has not been trained on is a special requirement for the finalisez Machine Learning Algorithm. From the attached figure, it can be easily displayed that the metrics for training and validation data for SVC are almost the same which means the model is generalizing well on new data.</li>
+       <img src='', width='', height=''>
       </ul>
     </li>
-    <li><strong>Web Application</strong></li>
-    <li><strong>SQL Database:</strong></li>
+    <li><strong>Web Application</strong>A Web Application is built as discussed above where the Bank Managers would enter the details of customer and get an idea of whether the customer would leave the services of the bank in future. Thus, they can further create some policies to retain them.</li>
 <li></li>
   </ol>
 </p>
