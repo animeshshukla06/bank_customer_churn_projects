@@ -2,8 +2,7 @@
 The aim of the project is to classify the customers of the bank based upon their personal details like 'Credit Score', 'Bank Balance', etc. as input features. The backend of the webpage involves SQL database and the machine learning model where the data entered for real time prediction will be stored in SQL database and the machine learning model would make predictions based upon the entered data; further the frontend of the webpage is built using HTML and CSS. The web-page could be extensively used by the bank managers to get an idea about those customers who are more likely to leave the services of the bank in future and hence, they could formulate some policies in order to retain those customers. 
 
 <p>
-<img src='![image](https://user-images.githubusercontent.com/64635584/120081614-291c7100-c0dc-11eb-8328-2ecdb7c6bfe6.png)
-', width='', height=''>
+<img src='https://user-images.githubusercontent.com/64635584/120081614-291c7100-c0dc-11eb-8328-2ecdb7c6bfe6.png', width='500', height='600'>
 <img src='', width='', height=''>
 </p>
 
