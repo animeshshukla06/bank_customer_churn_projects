@@ -24,13 +24,11 @@ The aim of the project is to classify the customers of the bank based upon their
         <li><strong>Feature Encoding: </strong>The process of Data Preprocessing starts with Feature Encoding which simply refers to the process of converting the categorical data into discrete numerical data since machine learning algorithms can only process numerical data. the data is splitted into training and test data where training data is composed of 75% of data and rest 25% of data is used to evaluate whether the model trained using the 75% data is performing good on the instances which the model hasn’t seen during training. The attached figure shows the proportion of data for positive class and negative class in percentage (for training data it is 1540 out of 7500 instances i.e. 20.533% and for test data it is 497 out of 2500 instances i.e. 19.880%.</li>
       <img src='https://user-images.githubusercontent.com/64635584/120081920-aa283800-c0dd-11eb-9bd7-7db3aa03be79.png', width='500', height='500'>
       <li><strong>Feature Scaling: </strong> Feature Scaling transforms all the numerical features to have values within the range 0 and 1 proportionately so that the convergence rate of the algorithm gets faster and it takes less time to reach the global minimum.</li>
+     
       <li><strong>Feature Selection: </strong> I have used 3 techniques for feature selection: 
-       <ul>
-        <li><strong>Correlation Matrix</strong> is observed to check if there exists multicollinearity in the data or not. Hopefully, none of the input features had high correlation with respect to each other.</li> 
-        
+       <ul><li><strong>Correlation Matrix</strong> is observed to check if there exists multicollinearity in the data or not. Hopefully, none of the input features had high correlation with respect to each other.</li> 
         <li><strong>Chi-squared test of independence </strong>, where the dependence of each of the input feature is computed with respect to the target feature and a score is calculated which is displayed as bars in the image attached.</li> 
 <img src='https://user-images.githubusercontent.com/64635584/120081944-c4faac80-c0dd-11eb-8c2c-4718829e46b0.png', width='500', height='500'>. 
-        
         <li><strong>L1 Based Feature Selection</strong> is a technique where we use L1 regularization to regularize the parameters learnt by the classification model (Support Vector Machines) for each of the input feature and since all of the input features are scaled to have values within the same range, their weights can be used to rank their importance. The attached figure shows the weights with respect to each of the input features.</li>
            <img src='https://user-images.githubusercontent.com/64635584/120081964-df348a80-c0dd-11eb-9c2b-1558d0427a59.png', width='500', height='500'>
        </ul></li></ul>
